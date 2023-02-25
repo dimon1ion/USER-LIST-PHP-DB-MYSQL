@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3307
--- Generation Time: Feb 23, 2023 at 10:00 PM
+-- Generation Time: Feb 25, 2023 at 03:40 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.9
 
@@ -31,16 +31,18 @@ CREATE TABLE `workers` (
   `id` int NOT NULL,
   `name` varchar(255) COLLATE utf8mb3_unicode_ci DEFAULT NULL,
   `age` int DEFAULT NULL,
-  `number` varchar(75) COLLATE utf8mb3_unicode_ci DEFAULT NULL
+  `salary` decimal(6,2) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 
 --
 -- Dumping data for table `workers`
 --
 
-INSERT INTO `workers` (`id`, `name`, `age`, `number`) VALUES
-(3, 'Andrey', 42, '88005553535'),
-(6, 'Mamed', 14, '+994-77-432-12-32');
+INSERT INTO `workers` (`id`, `name`, `age`, `salary`) VALUES
+(7, 'bot', 12, '23.00'),
+(8, 'bot', 12, '23.00'),
+(9, 'Ali', 21, '98.56'),
+(11, 'Kenan', 21, '61.00');
 
 --
 -- Indexes for dumped tables
@@ -60,7 +62,7 @@ ALTER TABLE `workers`
 -- AUTO_INCREMENT for table `workers`
 --
 ALTER TABLE `workers`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
